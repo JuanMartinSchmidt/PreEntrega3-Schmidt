@@ -1,0 +1,24 @@
+$header:(
+    bg-color: black,
+    flex: flex,
+    flow-cw: column wrap,
+    center: center,
+);
+
+$footer:(
+    font: 'alkatra',
+    flex: flex,
+    direction: column,
+    justify: space-evenly,
+    align: center,
+    bg-color: #fdffb6,
+    text: center
+);
+
+$destacados:(
+    font: 'nunito',
+    weight: bolder,
+    size: 1.5rem,
+    top: 8rem, 
+    left: 5rem
+);

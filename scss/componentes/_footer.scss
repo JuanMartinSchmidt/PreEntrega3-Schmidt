@@ -1,0 +1,32 @@
+footer{
+    padding: 5rem;
+    background-image: url(../../img/imagenfooter.webp);
+    div{
+        display: flex;
+        justify-content: space-evenly;
+        align-content: center;
+        gap: 2rem;
+    div{
+        display: map-get($footer, flex);
+        flex-direction: map-get($footer, direction);
+        justify-content: map-get($footer, justify);
+        align-items: map-get($footer, align);
+        background-color: nth($colores, 2);
+        border-radius: 1rem;
+        @media (max-width: 786px) {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+            h5{
+                font-family: map-get($footer, font);
+                margin-top: 0rem;
+                margin-left: 0rem;
+            }
+            div{
+                display: flex;
+                flex-direction: row;
+                gap: 3rem;
+            }
+    }
+}
+}

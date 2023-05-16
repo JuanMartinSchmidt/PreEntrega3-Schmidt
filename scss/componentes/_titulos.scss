@@ -1,0 +1,85 @@
+.titulo{
+    @extend %titulos;
+}
+#alfonsina{
+    font-size: $ft-sz-titulos;
+    padding-bottom: 5rem;
+    @include prop-texto(center, none);
+    @media (max-width: 992px){
+        font-size: 5rem;
+    }
+    @media (max-width: 576px){
+        font-size: 3rem;
+    }
+}
+#subtitulos{
+    font-family: nth($ft-family, 2);
+    font-style: italic;
+    font-size: $ft-sz-sub;
+    color: $color-titulos;
+    text-align: center;
+    padding-bottom: 8rem;
+    @media (max-width: 992px){
+        font-size: 2rem;
+        padding: 3rem;
+    }
+    @media (max-width: 576px){
+        font-size: 1.5rem;
+    }
+}
+.tituloPag{
+    @extend %titulos;
+    font-size: 5rem;
+    padding-left: 5rem;
+    margin-bottom: 0rem;
+    @media (max-width: 992px) {
+        font-size: 3rem;
+    }
+    @media (max-width: 576px) {
+        font-size: 2.5rem;  
+        padding-left: 2rem;  
+    }
+}
+.disp-btnDerecha{
+    @extend %disp-btn-derecha;
+    @media (max-width: 992px){
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+        position: absolute;
+        top: 44.3rem;
+    }
+    @media (max-width: 576px){
+        top: 41.4rem;
+    }
+    @media (max-width: 408px) {
+        top: 43.2rem;
+    }
+}
+.btnDerecha{
+    @extend %btn-gral;   
+    border-radius: 0rem;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    padding-right: 2rem;
+    @media (max-width: 992px){
+        border-top-left-radius: 0;
+        border-bottom-right-radius: 30%;
+        border-bottom-left-radius: 30%;
+        padding: 1rem;
+    }
+}
+
+.disp-btnDerechaPag{
+    @extend %disp-btn-derecha;
+    @media (max-width: 992px) {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+        position: absolute;
+        top: 27.6rem;
+    }
+    @media (max-width: 576px){
+        top: 27rem;
+    }
+}

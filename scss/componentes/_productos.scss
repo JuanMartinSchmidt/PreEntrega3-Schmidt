@@ -1,0 +1,68 @@
+
+.tarjetaProductos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    grid-template-areas: 
+    "img dl"
+    "button1 button2";
+    width: 30rem;
+    @extend %borde-gris;
+    background-color: white;
+    margin-bottom: 4rem;
+    font-family: nth($ft-family, 2);
+    img{
+        display: grid;
+        grid-area: img;
+        justify-self: center;
+        align-self: center;
+    }
+    dl{
+        display: grid;
+        grid-area: dl;
+        padding: 1rem 1rem 0rem 1rem;
+        margin: 0%;
+        justify-items: center;
+        a{
+            font-family: nth($ft-family, 3);
+            font-size: 2rem;
+            @include prop-texto(center, none);
+            color: black;
+            @media (max-width: 400px) {
+                font-size: 1.5rem;
+            }
+        }
+        button{
+            background-color: nth($colores, 2);
+            border: none;
+            padding: 0.5rem;
+            border-radius: 0.5rem;
+            margin: 1rem;
+        }
+    }
+    input{
+        border-color: #BDB2FF;
+        border-radius: 7px;
+        width: 4rem;
+    }
+    .buttonResultado{
+        display: grid;
+        grid-area: button1;
+        @extend %btn-gral;
+        border: none;
+        border-radius: 0.3rem;
+        align-self: center;
+        padding: 0.3rem;
+        margin: 1rem;
+    }
+    .buttonAgregar{
+        display: grid;
+        grid-area: button2;
+        @extend %btn-gral;
+        border: none;
+        border-radius: 0.3rem;
+        align-self: center;
+        padding: 0.3rem;
+        margin: 1rem;
+    }
+}

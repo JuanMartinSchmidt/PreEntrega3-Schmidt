@@ -1,0 +1,53 @@
+section{
+    form{
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        font-family: nth($ft-family, 3);
+        font-weight: bolder;
+        gap: 2rem;
+        @extend %borde-gris;
+        label{
+            margin: 4rem 2rem 0rem 2rem;
+        }
+        input{
+            margin: 0rem 10rem 0rem 2rem;
+            border: solid 2px lightgray;
+            border-radius: 1rem;
+            &:hover{
+                border: solid 2px lightblue;
+            }
+            @media (max-width: 992px) {
+                margin-right: 5rem;
+            }
+            @media (max-width: 576px){
+                margin-right: 2rem;
+            }
+        }
+        button{
+            margin: 2rem;
+            align-self: end;
+            font-weight: bolder;
+            @extend %btn-gral;
+            }
+    }
+}
+.crearCuenta{
+    @include disposicion(flex, column, center, center);
+    font-family: nth($ft-family, 3);
+    font-weight: bolder;
+    @media (max-width: 992px){
+        margin-top: 5rem;
+    }
+    button{
+        @extend %btn-gral;
+        font-weight: bold;
+    }
+}
+.destacados{
+    font-family: map-get($destacados, font);
+    font-weight: map-get($destacados, weight);
+    font-size: map-get($destacados, size);
+    margin-top: 10rem;
+    margin-left: map-get($destacados, left);
+}

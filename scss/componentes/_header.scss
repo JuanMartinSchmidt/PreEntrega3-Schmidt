@@ -1,0 +1,94 @@
+header{
+    nav{
+        position: fixed;
+        z-index: 2;
+        background-color: map-get($header, bg-color);
+        width: 100%;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        div{
+            justify-content: space-between;
+            a{
+                text-decoration: none;
+                color: nth($ft-color, 1);
+                font-family: nth($ft-family, 2);
+                }
+            ul{
+                margin: 0;
+                @include disposicion (flex, row, space-around, center);
+                @include prop-texto(center, none);
+                
+                li{
+                    list-style: none;
+                    @media (max-width: 992px) {
+                        display: none;
+                    }
+                    input{
+                    border-radius: nth($border-r, 2);
+                    font-family: nth($ft-family, 2);
+                    outline: none;
+                    }
+                }
+            }
+        }
+    }
+    .navResponsive{
+        width: 100%;
+        background-color: map-get($header, bg-color);
+        position: fixed;
+        z-index: 2;
+        @media (min-width: 992px){
+            display: none;
+        }
+        ul{
+            margin-bottom: 0rem;
+            padding-top: 1rem;
+            display: map-get($header, flex);
+            flex-flow: map-get($header, flow-cw);
+            gap: 1rem;
+            align-content: map-get($header, center);
+            li{
+                list-style: none;
+                a{
+                    @include prop-texto(center, none);
+                    font-family: nth($ft-family, 2);
+                    color: nth($ft-color, 1);
+                } 
+            }
+        }
+        nav{
+           div{
+                @include disp-obj(flex, space-between, center);
+                a{
+                    display: flex;
+                    justify-content: flex-end;
+                    padding-right: 5rem;
+                    font-family: $ft-titulos;
+                    color: $color-titulos;
+                    font-size: nth($ft-size, 2);
+                    text-decoration: none;
+                    @media (max-width: 576px) {
+                        padding-right: 1rem;
+                    }
+                    @media (max-width: 408px) {
+                        font-size: 1.5rem;
+                    }
+                }
+                input{
+                    border-radius: nth($border-r, 3);
+                    outline: none;
+                    font-family: nth($ft-family, 2);
+                    
+                }
+           }
+        }
+    }
+}
+.alfonsinaNav{
+    @include disp-obj(flex, center, center);
+    font-family: $ft-titulos;
+    color: $color-titulos;
+    font-size: 1.3rem;
+}
+
+

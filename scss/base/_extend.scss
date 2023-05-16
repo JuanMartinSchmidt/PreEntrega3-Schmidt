@@ -1,0 +1,40 @@
+%btn-gral{
+    background-color: nth($colores, 2);
+    padding: 1rem;
+    border: solid 1px transparent;
+    border-radius: 1rem;
+    &:hover{
+        background-color: nth($colores, 3);
+        border: solid 1px lightyellow;
+    }
+}
+
+%borde-gris{
+    border-bottom: solid lightgray 3px;
+    border-right: solid lightgray 3px;
+    border-radius: 1rem;
+}
+
+%titulos{
+    background-image: url(../../img/imagenfondo.webp);
+    background-size: cover;
+    padding-top: 15rem;
+    padding-bottom: 9rem;
+    color: $color-titulos;
+    font-family: $ft-titulos;
+}
+
+%disp-btn-derecha{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    position: fixed;
+    top: 12rem;
+    right: 0rem;
+    border-top: none;
+}
+
+%alfonsina-nav{
+    font-family: nth($ft-family, 2);
+    color: nth($ft-color, 1);
+}

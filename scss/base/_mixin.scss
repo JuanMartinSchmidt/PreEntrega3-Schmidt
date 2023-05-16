@@ -1,0 +1,18 @@
+@mixin prop-texto($t-center, $t-deco-n){
+    text-align: $t-center;
+    text-decoration: $t-deco-n;
+}
+
+@mixin disp-obj($display, $j-content, $align-self){
+    display: $display;
+    justify-content: $j-content;
+    align-self: $align-self;
+}
+
+@mixin disposicion($disp, $direccion, $justify, $align){
+    display: $disp;
+    flex-direction: $direccion;
+    justify-content: $justify;
+    align-items: $align;
+}
+

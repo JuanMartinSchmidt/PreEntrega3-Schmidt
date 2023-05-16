@@ -1,0 +1,25 @@
+.divContacto{
+    @include disp-obj (flex, space-around, center);
+    gap: 4rem;
+    .medios{
+        @extend %borde-gris;
+        display: flex;
+        justify-content: space-between;
+        font-family: nth($ft-family, 3);
+        font-weight: bolder;
+        background-color: white;
+        padding: 1rem 4rem 1rem 2rem;
+        ul{
+            @include disposicion(flex, column, space-around, start);
+            list-style: none;
+        }
+    }
+    aside{
+        h3{
+            margin: 0 0 2rem 0;
+        }
+        p{
+            text-align: center;
+        }
+    }
+}

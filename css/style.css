@@ -1,0 +1,582 @@
+@font-face {
+  font-family: "poppins";
+  src: url(../../font/poppins.ttf);
+}
+@font-face {
+  font-family: "alkatra";
+  src: url(../../font/alkatra.ttf);
+}
+@font-face {
+  font-family: "nunito";
+  src: url(../../font/nunito.ttf);
+}
+.contenedorProducto .listaCompra ul li button, .cardDestacado .btnCard, section .btnMail a, .crearCuenta button, section form button, .tarjetaProductos .buttonAgregar, .tarjetaProductos .buttonResultado, .btnDerecha {
+  background-color: #BDB2FF;
+  padding: 1rem;
+  border: solid 1px transparent;
+  border-radius: 1rem;
+}
+.contenedorProducto .listaCompra ul li button:hover, .cardDestacado .btnCard:hover, section .btnMail a:hover, .crearCuenta button:hover, section form button:hover, .tarjetaProductos .buttonAgregar:hover, .tarjetaProductos .buttonResultado:hover, .btnDerecha:hover {
+  background-color: #FFC6FF;
+  border: solid 1px lightyellow;
+}
+
+.contenedorProducto .listaCompra, .cardDestacado, section form, .tarjetaProductos, .divContacto .medios {
+  border-bottom: solid lightgray 3px;
+  border-right: solid lightgray 3px;
+  border-radius: 1rem;
+}
+
+.tituloPag, .titulo {
+  background-image: url(../../img/imagenfondo.webp);
+  background-size: cover;
+  padding-top: 15rem;
+  padding-bottom: 9rem;
+  color: #FDFFB6;
+  font-family: "poppins";
+}
+
+.disp-btnDerechaPag, .disp-btnDerecha {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  position: fixed;
+  top: 12rem;
+  right: 0rem;
+  border-top: none;
+}
+
+.divContacto {
+  display: flex;
+  justify-content: space-around;
+  align-self: center;
+  gap: 4rem;
+}
+.divContacto .medios {
+  display: flex;
+  justify-content: space-between;
+  font-family: "nunito";
+  font-weight: bolder;
+  background-color: white;
+  padding: 1rem 4rem 1rem 2rem;
+}
+.divContacto .medios ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: start;
+  list-style: none;
+}
+.divContacto aside h3 {
+  margin: 0 0 2rem 0;
+}
+.divContacto aside p {
+  text-align: center;
+}
+
+#alfonsina {
+  font-size: 8rem;
+  padding-bottom: 5rem;
+  text-align: center;
+  text-decoration: none;
+}
+@media (max-width: 992px) {
+  #alfonsina {
+    font-size: 5rem;
+  }
+}
+@media (max-width: 576px) {
+  #alfonsina {
+    font-size: 3rem;
+  }
+}
+
+#subtitulos {
+  font-family: "alkatra";
+  font-style: italic;
+  font-size: 2rem;
+  color: #FDFFB6;
+  text-align: center;
+  padding-bottom: 8rem;
+}
+@media (max-width: 992px) {
+  #subtitulos {
+    font-size: 2rem;
+    padding: 3rem;
+  }
+}
+@media (max-width: 576px) {
+  #subtitulos {
+    font-size: 1.5rem;
+  }
+}
+
+.tituloPag {
+  font-size: 5rem;
+  padding-left: 5rem;
+  margin-bottom: 0rem;
+}
+@media (max-width: 992px) {
+  .tituloPag {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 576px) {
+  .tituloPag {
+    font-size: 2.5rem;
+    padding-left: 2rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .disp-btnDerecha {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    position: absolute;
+    top: 44.3rem;
+  }
+}
+@media (max-width: 576px) {
+  .disp-btnDerecha {
+    top: 41.4rem;
+  }
+}
+@media (max-width: 408px) {
+  .disp-btnDerecha {
+    top: 43.2rem;
+  }
+}
+
+.btnDerecha {
+  border-radius: 0rem;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  padding-right: 2rem;
+}
+@media (max-width: 992px) {
+  .btnDerecha {
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 30%;
+    border-bottom-left-radius: 30%;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .disp-btnDerechaPag {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    position: absolute;
+    top: 27.6rem;
+  }
+}
+@media (max-width: 576px) {
+  .disp-btnDerechaPag {
+    top: 27rem;
+  }
+}
+
+footer {
+  padding: 5rem;
+  background-image: url(../../img/imagenfooter.webp);
+}
+footer div {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  gap: 2rem;
+}
+footer div div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #BDB2FF;
+  border-radius: 1rem;
+}
+@media (max-width: 786px) {
+  footer div div {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+footer div div h5 {
+  font-family: "alkatra";
+  margin-top: 0rem;
+  margin-left: 0rem;
+}
+footer div div div {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+}
+
+.tarjetaProductos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2fr 1fr;
+  grid-template-areas: "img dl" "button1 button2";
+  width: 30rem;
+  background-color: white;
+  margin-bottom: 4rem;
+  font-family: "alkatra";
+}
+.tarjetaProductos img {
+  display: grid;
+  grid-area: img;
+  justify-self: center;
+  align-self: center;
+}
+.tarjetaProductos dl {
+  display: grid;
+  grid-area: dl;
+  padding: 1rem 1rem 0rem 1rem;
+  margin: 0%;
+  justify-items: center;
+}
+.tarjetaProductos dl a {
+  font-family: "nunito";
+  font-size: 2rem;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+@media (max-width: 400px) {
+  .tarjetaProductos dl a {
+    font-size: 1.5rem;
+  }
+}
+.tarjetaProductos dl button {
+  background-color: #BDB2FF;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  margin: 1rem;
+}
+.tarjetaProductos input {
+  border-color: #BDB2FF;
+  border-radius: 7px;
+  width: 4rem;
+}
+.tarjetaProductos .buttonResultado {
+  display: grid;
+  grid-area: button1;
+  border: none;
+  border-radius: 0.3rem;
+  align-self: center;
+  padding: 0.3rem;
+  margin: 1rem;
+}
+.tarjetaProductos .buttonAgregar {
+  display: grid;
+  grid-area: button2;
+  border: none;
+  border-radius: 0.3rem;
+  align-self: center;
+  padding: 0.3rem;
+  margin: 1rem;
+}
+
+section form {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  font-family: "nunito";
+  font-weight: bolder;
+  gap: 2rem;
+}
+section form label {
+  margin: 4rem 2rem 0rem 2rem;
+}
+section form input {
+  margin: 0rem 10rem 0rem 2rem;
+  border: solid 2px lightgray;
+  border-radius: 1rem;
+}
+section form input:hover {
+  border: solid 2px lightblue;
+}
+@media (max-width: 992px) {
+  section form input {
+    margin-right: 5rem;
+  }
+}
+@media (max-width: 576px) {
+  section form input {
+    margin-right: 2rem;
+  }
+}
+section form button {
+  margin: 2rem;
+  align-self: end;
+  font-weight: bolder;
+}
+
+.crearCuenta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "nunito";
+  font-weight: bolder;
+}
+@media (max-width: 992px) {
+  .crearCuenta {
+    margin-top: 5rem;
+  }
+}
+.crearCuenta button {
+  font-weight: bold;
+}
+
+.destacados {
+  font-family: "nunito";
+  font-weight: bolder;
+  font-size: 1.5rem;
+  margin-top: 10rem;
+  margin-left: 5rem;
+}
+
+header nav {
+  position: fixed;
+  z-index: 2;
+  background-color: black;
+  width: 100%;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+header nav div {
+  justify-content: space-between;
+}
+header nav div a {
+  text-decoration: none;
+  color: white;
+  font-family: "alkatra";
+}
+header nav div ul {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+}
+header nav div ul li {
+  list-style: none;
+}
+@media (max-width: 992px) {
+  header nav div ul li {
+    display: none;
+  }
+}
+header nav div ul li input {
+  border-radius: 2rem;
+  font-family: "alkatra";
+  outline: none;
+}
+header .navResponsive {
+  width: 100%;
+  background-color: black;
+  position: fixed;
+  z-index: 2;
+}
+@media (min-width: 992px) {
+  header .navResponsive {
+    display: none;
+  }
+}
+header .navResponsive ul {
+  margin-bottom: 0rem;
+  padding-top: 1rem;
+  display: flex;
+  flex-flow: column wrap;
+  gap: 1rem;
+  align-content: center;
+}
+header .navResponsive ul li {
+  list-style: none;
+}
+header .navResponsive ul li a {
+  text-align: center;
+  text-decoration: none;
+  font-family: "alkatra";
+  color: white;
+}
+header .navResponsive nav div {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+}
+header .navResponsive nav div a {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 5rem;
+  font-family: "poppins";
+  color: #FDFFB6;
+  font-size: 2rem;
+  text-decoration: none;
+}
+@media (max-width: 576px) {
+  header .navResponsive nav div a {
+    padding-right: 1rem;
+  }
+}
+@media (max-width: 408px) {
+  header .navResponsive nav div a {
+    font-size: 1.5rem;
+  }
+}
+header .navResponsive nav div input {
+  border-radius: 3rem;
+  outline: none;
+  font-family: "alkatra";
+}
+
+.alfonsinaNav {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  font-family: "poppins";
+  color: #FDFFB6;
+  font-size: 1.3rem;
+}
+
+.bg-gral {
+  background-image: linear-gradient(45deg, hsl(249, 100%, 85%) 5%, hsl(259, 100%, 86%) 20%, hsl(269, 100%, 86%) 26%, hsl(279, 100%, 87%) 29%, hsl(289, 100%, 88%) 33%, hsl(300, 100%, 89%) 36%, hsl(325, 100%, 89%) 40%, hsl(1, 100%, 90%) 45%, hsl(30, 100%, 86%) 52%, hsl(47, 100%, 84%) 62%, hsl(61, 100%, 86%) 90%);
+}
+
+section {
+  padding-top: 8rem;
+}
+@media (max-width: 992px) {
+  section {
+    padding-top: 10rem;
+  }
+}
+section h3 {
+  text-align: center;
+  font-size: 3rem;
+  font-family: "nunito";
+  font-weight: bolder;
+  text-decoration: dotted;
+  margin-bottom: 10rem;
+}
+@media (max-width: 576px) {
+  section h3 {
+    font-size: 2rem;
+    margin-bottom: 5rem;
+  }
+}
+section article {
+  margin-bottom: 4rem;
+}
+section article h4 {
+  margin-bottom: 5rem;
+  margin-top: 2rem;
+}
+section .btnMail a {
+  border-radius: 1rem;
+  padding: 1.5rem;
+  border: solid 2px transparent;
+}
+section .btnMail a:hover {
+  border-top: solid #FDFFB6 2px;
+  border-right: solid #FDFFB6 2px;
+}
+
+h5 {
+  font-family: "nunito";
+  font-weight: bolder;
+  font-size: 1.5rem;
+  margin-top: 8rem;
+  margin-left: 5rem;
+}
+
+.cardDestacado {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: white;
+  font-family: "nunito";
+  font-weight: bold;
+  padding: 1rem;
+  margin-bottom: 3rem;
+  gap: 1rem;
+}
+.cardDestacado a {
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: black;
+}
+.cardDestacado .btnCard {
+  padding: 0.5rem;
+  border: solid 2px transparent;
+  border-radius: 0.5rem;
+}
+.cardDestacado .btnCard:hover {
+  border: solid 2px #FDFFB6;
+}
+.cardDestacado .btnCard a {
+  font-family: "nunito";
+  font-weight: bold;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 1rem;
+}
+
+@media (max-width: 992px) {
+  .contenedorProducto {
+    gap: 2rem;
+    justify-content: center;
+  }
+}
+.contenedorProducto .listaCompra {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: space-around;
+  background-color: azure;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+@media (max-width: 992px) {
+  .contenedorProducto .listaCompra {
+    margin-top: 2rem;
+  }
+}
+.contenedorProducto .listaCompra ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  list-style: none;
+  align-items: center;
+}
+@media (max-width: 992px) {
+  .contenedorProducto .listaCompra ul {
+    gap: 2rem;
+  }
+}
+.contenedorProducto .listaCompra ul li input {
+  border: solid 2px lightgray;
+  border-radius: 1rem;
+  width: 8rem;
+}
+.contenedorProducto .listaCompra ul li input:hover {
+  border: solid 2px lightblue;
+}
+.contenedorProducto .listaCompra ul li button {
+  padding: 0.5rem 2rem 0.5rem 2rem;
+}
+.contenedorProducto .btnOpciones {
+  --bs-btn-active-bg: plum;
+  --bs-btn-active-color: white;
+  --bs-btn-active-border-color: transparent;
+}
+
+/*# sourceMappingURL=style.css.map */

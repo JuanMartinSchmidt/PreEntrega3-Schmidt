@@ -1,3 +1,15 @@
+@font-face {
+  font-family: "poppins";
+  src: url(../../font/poppins.ttf);
+}
+@font-face {
+  font-family: "alkatra";
+  src: url(../../font/alkatra.ttf);
+}
+@font-face {
+  font-family: "nunito";
+  src: url(../../font/nunito.ttf);
+}
 .cardDestacado .btnCard, section .btnMail a, .contenedorProducto .listaCompra ul li button, .crearCuenta button, section form button, .tarjetaProductos .buttonAgregar, .tarjetaProductos .buttonResultado, .btnDerecha {
   background-color: #BDB2FF;
   padding: 1rem;
@@ -34,18 +46,6 @@
   border-top: none;
 }
 
-@font-face {
-  font-family: "poppins";
-  src: url(../../font/poppins.ttf);
-}
-@font-face {
-  font-family: "alkatra";
-  src: url(../../font/alkatra.ttf);
-}
-@font-face {
-  font-family: "nunito";
-  src: url(../../font/nunito.ttf);
-}
 .divContacto {
   display: flex;
   justify-content: space-around;

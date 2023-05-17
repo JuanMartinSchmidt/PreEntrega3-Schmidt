@@ -1,14 +1,14 @@
 @font-face {
   font-family: "poppins";
-  src: url(../../font/poppins.ttf);
+  src: url(../font/poppins.ttf);
 }
 @font-face {
   font-family: "alkatra";
-  src: url(../../font/alkatra.ttf);
+  src: url(../font/alkatra.ttf);
 }
 @font-face {
   font-family: "nunito";
-  src: url(../../font/nunito.ttf);
+  src: url(../font/nunito.ttf);
 }
 .cardDestacado .btnCard, section .btnMail a, .contenedorProducto .listaCompra ul li button, .crearCuenta button, section form button, .tarjetaProductos .buttonAgregar, .tarjetaProductos .buttonResultado, .btnDerecha {
   background-color: #BDB2FF;
@@ -28,7 +28,7 @@
 }
 
 .tituloPag, .titulo {
-  background-image: url(../../img/imagenfondo.webp);
+  background-image: url(../img/imagenfondo.webp);
   background-size: cover;
   padding-top: 15rem;
   padding-bottom: 9rem;
@@ -546,7 +546,7 @@ h5 {
 
 footer {
   padding: 5rem;
-  background-image: url(../../img/imagenfooter.webp);
+  background-image: url(../img/imagenfooter.webp);
 }
 footer div {
   display: flex;

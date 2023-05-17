@@ -6,6 +6,9 @@ header{
         width: 100%;
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;
+        @media (max-width: 992px) {
+            display: none;
+        }
         div{
             justify-content: space-between;
             a{
@@ -56,8 +59,9 @@ header{
                 } 
             }
         }
-        nav{
-           div{
+        .navbar{
+           
+            div{
                 @include disp-obj(flex, space-between, center);
                 a{
                     display: flex;

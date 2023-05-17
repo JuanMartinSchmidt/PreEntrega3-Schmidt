@@ -362,6 +362,11 @@ header nav {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
+@media (max-width: 992px) {
+  header nav {
+    display: none;
+  }
+}
 header nav div {
   justify-content: space-between;
 }
@@ -420,12 +425,12 @@ header .navResponsive ul li a {
   font-family: "alkatra";
   color: white;
 }
-header .navResponsive nav div {
+header .navResponsive .navbar div {
   display: flex;
   justify-content: space-between;
   align-self: center;
 }
-header .navResponsive nav div a {
+header .navResponsive .navbar div a {
   display: flex;
   justify-content: flex-end;
   padding-right: 5rem;
@@ -435,16 +440,16 @@ header .navResponsive nav div a {
   text-decoration: none;
 }
 @media (max-width: 576px) {
-  header .navResponsive nav div a {
+  header .navResponsive .navbar div a {
     padding-right: 1rem;
   }
 }
 @media (max-width: 408px) {
-  header .navResponsive nav div a {
+  header .navResponsive .navbar div a {
     font-size: 1.5rem;
   }
 }
-header .navResponsive nav div input {
+header .navResponsive .navbar div input {
   border-radius: 3rem;
   outline: none;
   font-family: "alkatra";

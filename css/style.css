@@ -1,27 +1,15 @@
-@font-face {
-  font-family: "poppins";
-  src: url(../../font/poppins.ttf);
-}
-@font-face {
-  font-family: "alkatra";
-  src: url(../../font/alkatra.ttf);
-}
-@font-face {
-  font-family: "nunito";
-  src: url(../../font/nunito.ttf);
-}
-.contenedorProducto .listaCompra ul li button, .cardDestacado .btnCard, section .btnMail a, .crearCuenta button, section form button, .tarjetaProductos .buttonAgregar, .tarjetaProductos .buttonResultado, .btnDerecha {
+.cardDestacado .btnCard, section .btnMail a, .contenedorProducto .listaCompra ul li button, .crearCuenta button, section form button, .tarjetaProductos .buttonAgregar, .tarjetaProductos .buttonResultado, .btnDerecha {
   background-color: #BDB2FF;
   padding: 1rem;
   border: solid 1px transparent;
   border-radius: 1rem;
 }
-.contenedorProducto .listaCompra ul li button:hover, .cardDestacado .btnCard:hover, section .btnMail a:hover, .crearCuenta button:hover, section form button:hover, .tarjetaProductos .buttonAgregar:hover, .tarjetaProductos .buttonResultado:hover, .btnDerecha:hover {
+.cardDestacado .btnCard:hover, section .btnMail a:hover, .contenedorProducto .listaCompra ul li button:hover, .crearCuenta button:hover, section form button:hover, .tarjetaProductos .buttonAgregar:hover, .tarjetaProductos .buttonResultado:hover, .btnDerecha:hover {
   background-color: #FFC6FF;
   border: solid 1px lightyellow;
 }
 
-.contenedorProducto .listaCompra, .cardDestacado, section form, .tarjetaProductos, .divContacto .medios {
+.cardDestacado, .contenedorProducto .listaCompra, section form, .tarjetaProductos, .divContacto .medios {
   border-bottom: solid lightgray 3px;
   border-right: solid lightgray 3px;
   border-radius: 1rem;
@@ -46,6 +34,18 @@
   border-top: none;
 }
 
+@font-face {
+  font-family: "poppins";
+  src: url(../../font/poppins.ttf);
+}
+@font-face {
+  font-family: "alkatra";
+  src: url(../../font/alkatra.ttf);
+}
+@font-face {
+  font-family: "nunito";
+  src: url(../../font/nunito.ttf);
+}
 .divContacto {
   display: flex;
   justify-content: space-around;
@@ -178,41 +178,6 @@
   }
 }
 
-footer {
-  padding: 5rem;
-  background-image: url(../../img/imagenfooter.webp);
-}
-footer div {
-  display: flex;
-  justify-content: space-evenly;
-  align-content: center;
-  gap: 2rem;
-}
-footer div div {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  background-color: #BDB2FF;
-  border-radius: 1rem;
-}
-@media (max-width: 786px) {
-  footer div div {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-  }
-}
-footer div div h5 {
-  font-family: "alkatra";
-  margin-top: 0rem;
-  margin-left: 0rem;
-}
-footer div div div {
-  display: flex;
-  flex-direction: row;
-  gap: 3rem;
-}
-
 .tarjetaProductos {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -337,6 +302,56 @@ section form button {
   font-size: 1.5rem;
   margin-top: 10rem;
   margin-left: 5rem;
+}
+
+@media (max-width: 992px) {
+  .contenedorProducto {
+    gap: 2rem;
+    justify-content: center;
+  }
+}
+.contenedorProducto .listaCompra {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: space-around;
+  background-color: azure;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+@media (max-width: 992px) {
+  .contenedorProducto .listaCompra {
+    margin-top: 2rem;
+  }
+}
+.contenedorProducto .listaCompra ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  list-style: none;
+  align-items: center;
+}
+@media (max-width: 992px) {
+  .contenedorProducto .listaCompra ul {
+    gap: 2rem;
+  }
+}
+.contenedorProducto .listaCompra ul li input {
+  border: solid 2px lightgray;
+  border-radius: 1rem;
+  width: 8rem;
+}
+.contenedorProducto .listaCompra ul li input:hover {
+  border: solid 2px lightblue;
+}
+.contenedorProducto .listaCompra ul li button {
+  padding: 0.5rem 2rem 0.5rem 2rem;
+}
+.contenedorProducto .btnOpciones {
+  --bs-btn-active-bg: plum;
+  --bs-btn-active-color: white;
+  --bs-btn-active-border-color: transparent;
 }
 
 header nav {
@@ -529,54 +544,39 @@ h5 {
   font-size: 1rem;
 }
 
-@media (max-width: 992px) {
-  .contenedorProducto {
-    gap: 2rem;
-    justify-content: center;
-  }
+footer {
+  padding: 5rem;
+  background-image: url(../../img/imagenfooter.webp);
 }
-.contenedorProducto .listaCompra {
+footer div {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: space-around;
-  background-color: azure;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  justify-content: space-evenly;
+  align-content: center;
+  gap: 2rem;
 }
-@media (max-width: 992px) {
-  .contenedorProducto .listaCompra {
-    margin-top: 2rem;
-  }
-}
-.contenedorProducto .listaCompra ul {
+footer div div {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: start;
-  list-style: none;
+  justify-content: space-evenly;
   align-items: center;
+  background-color: #BDB2FF;
+  border-radius: 1rem;
 }
-@media (max-width: 992px) {
-  .contenedorProducto .listaCompra ul {
-    gap: 2rem;
+@media (max-width: 786px) {
+  footer div div {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 }
-.contenedorProducto .listaCompra ul li input {
-  border: solid 2px lightgray;
-  border-radius: 1rem;
-  width: 8rem;
+footer div div h5 {
+  font-family: "alkatra";
+  margin-top: 0rem;
+  margin-left: 0rem;
 }
-.contenedorProducto .listaCompra ul li input:hover {
-  border: solid 2px lightblue;
-}
-.contenedorProducto .listaCompra ul li button {
-  padding: 0.5rem 2rem 0.5rem 2rem;
-}
-.contenedorProducto .btnOpciones {
-  --bs-btn-active-bg: plum;
-  --bs-btn-active-color: white;
-  --bs-btn-active-border-color: transparent;
+footer div div div {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
 }
 
 /*# sourceMappingURL=style.css.map */

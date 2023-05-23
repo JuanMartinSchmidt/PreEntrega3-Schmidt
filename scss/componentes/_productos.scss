@@ -48,7 +48,7 @@
     .buttonResultado{
         display: grid;
         grid-area: button1;
-        @extend %btn-gral;
+        @extend %btn-comprar;
         border: none;
         border-radius: 0.3rem;
         align-self: center;
@@ -58,7 +58,7 @@
     .buttonAgregar{
         display: grid;
         grid-area: button2;
-        @extend %btn-gral;
+        @extend %btn-comprar;
         border: none;
         border-radius: 0.3rem;
         align-self: center;

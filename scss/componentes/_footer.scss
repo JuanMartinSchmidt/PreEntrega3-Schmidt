@@ -19,14 +19,23 @@ footer{
         }
             h5{
                 font-family: map-get($footer, font);
-                margin-top: 0rem;
+                margin-top: 2rem;
                 margin-left: 0rem;
             }
-            div{
+            ul{
                 display: flex;
                 flex-direction: row;
                 gap: 3rem;
+                list-style: none;
+                li{
+                    transition: 0.3 s;
+                    &:hover{
+                    transform: scale(1.1);
+                }
+                }
             }
+        }
     }
 }
-}
+  
+  

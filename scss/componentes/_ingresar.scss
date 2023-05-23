@@ -27,9 +27,10 @@ section{
         button{
             margin: 2rem;
             align-self: end;
-            font-weight: bolder;
-            @extend %btn-gral;
-            }
+            font-weight: bold;
+            @extend %btn-diagonal;
+            padding: 1rem;
+        }
     }
 }
 .crearCuenta{
@@ -40,8 +41,9 @@ section{
         margin-top: 5rem;
     }
     button{
-        @extend %btn-gral;
+        @extend %btn-diagonal;
         font-weight: bold;
+        padding: 1rem;
     }
 }
 .destacados{

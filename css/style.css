@@ -10,20 +10,18 @@
   font-family: "nunito";
   src: url(../font/nunito.ttf);
 }
-.cardDestacado .btnCard, main section .btnMail a, .contenedorProducto .listaCompra ul li button, .crearCuenta button, section form button, .tarjetaProductos .buttonAgregar, .tarjetaProductos .buttonResultado, .btnDerecha {
+.contenedorProducto .listaCompra ul li button, .tarjetaProductos .buttonAgregar, .tarjetaProductos .buttonResultado, .btnDerecha {
   background-color: #BDB2FF;
   padding: 1rem;
   border: solid 1px transparent;
   border-radius: 1rem;
 }
-.cardDestacado .btnCard:hover, main section .btnMail a:hover, .contenedorProducto .listaCompra ul li button:hover, .crearCuenta button:hover, section form button:hover, .tarjetaProductos .buttonAgregar:hover, .tarjetaProductos .buttonResultado:hover, .btnDerecha:hover {
+.contenedorProducto .listaCompra ul li button:hover, .tarjetaProductos .buttonAgregar:hover, .tarjetaProductos .buttonResultado:hover, .btnDerecha:hover {
   background-color: #FFC6FF;
-  border: solid 1px lightyellow;
 }
 
 .cardDestacado, .contenedorProducto .listaCompra, section form, .tarjetaProductos, .divContacto .medios {
-  border-bottom: solid lightgray 3px;
-  border-right: solid lightgray 3px;
+  box-shadow: 0px 0px 35px gray;
   border-radius: 1rem;
 }
 
@@ -44,6 +42,36 @@
   top: 12rem;
   right: 0rem;
   border-top: none;
+}
+
+.cardDestacado .btnCard, main section article .btnMail, .crearCuenta button, section form button {
+  background-color: #FFC6FF;
+  border: none;
+  border-radius: 1rem;
+  transition: all 0.7s;
+  overflow: hidden;
+  width: max-content;
+  height: max-content;
+  box-shadow: 2px 2px 10px -4px gray;
+}
+.cardDestacado .btnCard:hover, main section article .btnMail:hover, .crearCuenta button:hover, section form button:hover {
+  transform: scale(1.1);
+  box-shadow: 4px 5px 17px -4px black;
+}
+.cardDestacado .btnCard::before, main section article .btnMail::before, .crearCuenta button::before, section form button::before {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: #BDB2FF;
+  transform: skewX(45deg);
+  z-index: -1;
+  transition: width 0.7s;
+}
+.cardDestacado .btnCard:hover::before, main section article .btnMail:hover::before, .crearCuenta button:hover::before, section form button:hover::before {
+  width: 250%;
 }
 
 .divContacto {
@@ -276,7 +304,8 @@ section form input:hover {
 section form button {
   margin: 2rem;
   align-self: end;
-  font-weight: bolder;
+  font-weight: bold;
+  padding: 1rem;
 }
 
 .crearCuenta {
@@ -294,6 +323,7 @@ section form button {
 }
 .crearCuenta button {
   font-weight: bold;
+  padding: 1rem;
 }
 
 .destacados {
@@ -462,6 +492,10 @@ header .navResponsive .navbar div input {
   font-family: "poppins";
   color: #FDFFB6;
   font-size: 1.3rem;
+  transition: all 0.5s;
+}
+.alfonsinaNav:hover {
+  transform: scale(1.3);
 }
 
 .bg-gral {
@@ -494,6 +528,9 @@ main section h3 {
   }
 }
 main section article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-bottom: 4rem;
 }
 main section article h4 {
@@ -502,17 +539,8 @@ main section article h4 {
 }
 main section article p {
   font-weight: 500;
+  align-self: flex-start;
 }
-main section .btnMail a {
-  border-radius: 1rem;
-  padding: 1.5rem;
-  border: solid 2px transparent;
-}
-main section .btnMail a:hover {
-  border-top: solid #FDFFB6 2px;
-  border-right: solid #FDFFB6 2px;
-}
-
 h5 {
   font-family: "nunito";
   font-weight: bolder;
@@ -541,11 +569,7 @@ h5 {
 }
 .cardDestacado .btnCard {
   padding: 0.5rem;
-  border: solid 2px transparent;
   border-radius: 0.5rem;
-}
-.cardDestacado .btnCard:hover {
-  border: solid 2px #FDFFB6;
 }
 .cardDestacado .btnCard a {
   font-family: "nunito";
@@ -581,13 +605,20 @@ footer div div {
 }
 footer div div h5 {
   font-family: "alkatra";
-  margin-top: 0rem;
+  margin-top: 2rem;
   margin-left: 0rem;
 }
-footer div div div {
+footer div div ul {
   display: flex;
   flex-direction: row;
   gap: 3rem;
+  list-style: none;
+}
+footer div div ul li {
+  transition: 0.3 s;
+}
+footer div div ul li:hover {
+  transform: scale(1.1);
 }
 
 /*# sourceMappingURL=style.css.map */

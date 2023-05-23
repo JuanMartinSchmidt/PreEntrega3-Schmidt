@@ -1,17 +1,15 @@
-%btn-gral{
+%btn-comprar{
     background-color: nth($colores, 2);
     padding: 1rem;
     border: solid 1px transparent;
     border-radius: 1rem;
     &:hover{
         background-color: nth($colores, 3);
-        border: solid 1px lightyellow;
     }
 }
 
 %borde-gris{
-    border-bottom: solid lightgray 3px;
-    border-right: solid lightgray 3px;
+    box-shadow: 0px 0px 35px gray;
     border-radius: 1rem;
 }
 
@@ -37,4 +35,34 @@
 %alfonsina-nav{
     font-family: nth($ft-family, 2);
     color: nth($ft-color, 1);
+}
+
+%btn-diagonal{
+    background-color: nth($colores, 3);
+    border: none;
+    border-radius: 1rem;
+    transition: all 0.7s;
+    overflow: hidden;
+    width: max-content;
+    height: max-content;
+    box-shadow: 2px 2px 10px -4px gray;
+    &:hover{
+        transform: scale(1.1);
+        box-shadow: 4px 5px 17px -4px black; 
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        left: -50px;
+        top: 0;
+        width: 0;
+        height: 100%;
+        background-color: #BDB2FF;
+        transform: skewX(45deg);
+        z-index: -1;
+        transition: width 0.7s;       
+    }
+    &:hover::before {
+        width: 250%;
+        }
 }

@@ -15,16 +15,16 @@ header{
                 text-decoration: none;
                 color: nth($ft-color, 1);
                 font-family: nth($ft-family, 2);
-                }
+            }
             ul{
                 margin: 0;
                 @include disposicion (flex, row, space-around, center);
-                @include prop-texto(center, none);
-                
+                @include prop-texto(center, none);                
                 li{
                     list-style: none;
                     @media (max-width: 992px) {
                         display: none;
+                        
                     }
                     input{
                     border-radius: nth($border-r, 2);
@@ -70,7 +70,7 @@ header{
                     font-family: $ft-titulos;
                     color: $color-titulos;
                     font-size: nth($ft-size, 2);
-                    text-decoration: none;
+                    text-decoration: none;                   
                     @media (max-width: 576px) {
                         padding-right: 1rem;
                     }
@@ -93,6 +93,10 @@ header{
     font-family: $ft-titulos;
     color: $color-titulos;
     font-size: 1.3rem;
+    transition: all 0.5s;
+        &:hover{
+        transform: scale(1.3);
+        }
 }
 
 

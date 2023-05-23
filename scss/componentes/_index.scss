@@ -35,6 +35,9 @@ main{
             }
         }
         article{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             margin-bottom: 4rem;
             h4{
                 margin-bottom: 5rem;
@@ -42,18 +45,11 @@ main{
             }
             p{
                 font-weight: 500;
+                align-self: flex-start;
             }
-        }
-        .btnMail{
-            a{
-                @extend %btn-gral;
-                border-radius: 1rem;
-                padding: 1.5rem;
-                border: solid 2px transparent;
-                &:hover{
-                    border-top: solid #FDFFB6 2px;
-                    border-right: solid #FDFFB6 2px;
-                }
+        
+            .btnMail{         
+                @extend %btn-diagonal;
             }
         }
     }
@@ -76,29 +72,23 @@ h5{
     margin-bottom: 3rem;
     gap: 1rem;
     @extend %borde-gris;
+
     a{
        @include prop-texto(center, none); 
        font-size: 1.5rem;
        color: black;
     }
     .btnCard{
-        @extend %btn-gral;
+        @extend %btn-diagonal;
         padding: 0.5rem;
-        border: solid 2px transparent;
-        border-radius: 0.5rem;  
-        &:hover{
-            border: solid 2px #FDFFB6;
-        }
+        border-radius: 0.5rem;
         a{
             font-family: nth($ft-family, 3);
             font-weight: bold;
             padding-left: 1rem;
             padding-right: 1rem;
             font-size: 1rem;
+            
         }
     }
-    
 }
-
-
-

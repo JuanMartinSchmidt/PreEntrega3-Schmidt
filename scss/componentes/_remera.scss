@@ -6,7 +6,7 @@
     .listaCompra{
         @include disposicion (flex, row, space-around, space-around);
         @extend %borde-gris;
-        background-color: azure;
+        background-color: $bg-tarjetas;
         padding-top: 2rem;
         padding-bottom: 2rem;
         @media (max-width: 992px) {
@@ -15,7 +15,6 @@
         ul{
             @include disposicion (flex, column, space-between, start);
             list-style: none;
-            align-items: center;
             @media (max-width: 992px) {
                 gap: 2rem;
             }
@@ -29,7 +28,7 @@
                     }
                 }
                 button{
-                    @extend %btn-comprar;
+                    @extend %btn-diagonal;
                     padding: 0.5rem 2rem 0.5rem 2rem;
                 }
             }

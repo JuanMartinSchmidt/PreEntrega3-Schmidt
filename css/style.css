@@ -10,19 +10,21 @@
   font-family: "nunito";
   src: url(../font/nunito.ttf);
 }
-.contenedorProducto .listaCompra ul li button, .tarjetaProductos .buttonAgregar, .tarjetaProductos .buttonResultado, .btnDerecha {
+.cardDestacado .btnCard, .tarjetaProductos .buttonAgregar, .tarjetaProductos .buttonResultado, .btnDerecha {
   background-color: #BDB2FF;
   padding: 1rem;
   border: solid 1px transparent;
   border-radius: 1rem;
+  transition: 0.3s;
 }
-.contenedorProducto .listaCompra ul li button:hover, .tarjetaProductos .buttonAgregar:hover, .tarjetaProductos .buttonResultado:hover, .btnDerecha:hover {
+.cardDestacado .btnCard:hover, .tarjetaProductos .buttonAgregar:hover, .tarjetaProductos .buttonResultado:hover, .btnDerecha:hover {
   background-color: #FFC6FF;
+  transform: scale(1.1);
 }
 
 .cardDestacado, .contenedorProducto .listaCompra, section form, .tarjetaProductos, .divContacto .medios {
   box-shadow: 0px 0px 35px gray;
-  border-radius: 1rem;
+  border-radius: 0.7rem;
 }
 
 .tituloPag, .titulo {
@@ -44,7 +46,7 @@
   border-top: none;
 }
 
-.cardDestacado .btnCard, main section article .btnMail, .crearCuenta button, section form button {
+main section article .btnMail, .contenedorProducto .listaCompra ul li button, .crearCuenta button, section form button {
   background-color: #FFC6FF;
   border: none;
   border-radius: 1rem;
@@ -54,11 +56,11 @@
   height: max-content;
   box-shadow: 2px 2px 10px -4px gray;
 }
-.cardDestacado .btnCard:hover, main section article .btnMail:hover, .crearCuenta button:hover, section form button:hover {
+main section article .btnMail:hover, .contenedorProducto .listaCompra ul li button:hover, .crearCuenta button:hover, section form button:hover {
   transform: scale(1.1);
   box-shadow: 4px 5px 17px -4px black;
 }
-.cardDestacado .btnCard::before, main section article .btnMail::before, .crearCuenta button::before, section form button::before {
+main section article .btnMail::before, .contenedorProducto .listaCompra ul li button::before, .crearCuenta button::before, section form button::before {
   content: "";
   position: absolute;
   left: -50px;
@@ -70,7 +72,7 @@
   z-index: -1;
   transition: width 0.7s;
 }
-.cardDestacado .btnCard:hover::before, main section article .btnMail:hover::before, .crearCuenta button:hover::before, section form button:hover::before {
+main section article .btnMail:hover::before, .contenedorProducto .listaCompra ul li button:hover::before, .crearCuenta button:hover::before, section form button:hover::before {
   width: 250%;
 }
 
@@ -333,6 +335,11 @@ section form button {
   margin-top: 10rem;
   margin-left: 5rem;
 }
+@media (max-width: 576px) {
+  .destacados {
+    margin-left: 1rem;
+  }
+}
 
 @media (max-width: 992px) {
   .contenedorProducto {
@@ -345,7 +352,7 @@ section form button {
   flex-direction: row;
   justify-content: space-around;
   align-items: space-around;
-  background-color: azure;
+  background-color: white;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
@@ -360,7 +367,6 @@ section form button {
   justify-content: space-between;
   align-items: start;
   list-style: none;
-  align-items: center;
 }
 @media (max-width: 992px) {
   .contenedorProducto .listaCompra ul {
@@ -518,7 +524,6 @@ main section h3 {
   font-size: 3rem;
   font-family: "nunito";
   font-weight: bolder;
-  text-decoration: dotted;
   margin-bottom: 10rem;
 }
 @media (max-width: 576px) {
@@ -536,6 +541,7 @@ main section article {
 main section article h4 {
   margin-bottom: 5rem;
   margin-top: 2rem;
+  align-self: flex-start;
 }
 main section article p {
   font-weight: 500;
@@ -547,6 +553,11 @@ h5 {
   font-size: 1.5rem;
   margin-top: 8rem;
   margin-left: 5rem;
+}
+@media (max-width: 576px) {
+  h5 {
+    margin-left: 1rem;
+  }
 }
 
 .cardDestacado {
@@ -615,7 +626,7 @@ footer div div ul {
   list-style: none;
 }
 footer div div ul li {
-  transition: 0.3 s;
+  transition: 0.5s;
 }
 footer div div ul li:hover {
   transform: scale(1.1);

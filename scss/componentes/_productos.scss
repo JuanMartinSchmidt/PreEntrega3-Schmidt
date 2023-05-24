@@ -8,7 +8,7 @@
     "button1 button2";
     width: 30rem;
     @extend %borde-gris;
-    background-color: white;
+    background-color: $bg-tarjetas;
     margin-bottom: 4rem;
     font-family: nth($ft-family, 2);
     img{
@@ -27,7 +27,7 @@
             font-family: nth($ft-family, 3);
             font-size: 2rem;
             @include prop-texto(center, none);
-            color: black;
+            color: nth($ft-color, 2);
             @media (max-width: 400px) {
                 font-size: 1.5rem;
             }
@@ -41,7 +41,7 @@
         }
     }
     input{
-        border-color: #BDB2FF;
+        border-color: nth($colores, 2);
         border-radius: 7px;
         width: 4rem;
     }

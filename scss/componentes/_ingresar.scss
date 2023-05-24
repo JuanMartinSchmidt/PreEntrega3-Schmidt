@@ -2,7 +2,7 @@ section{
     form{
         display: flex;
         flex-direction: column;
-        background-color: white;
+        background-color: $bg-tarjetas;
         font-family: nth($ft-family, 3);
         font-weight: bolder;
         gap: 2rem;
@@ -52,4 +52,7 @@ section{
     font-size: map-get($destacados, size);
     margin-top: 10rem;
     margin-left: map-get($destacados, left);
+    @media (max-width: 576px){
+        margin-left: 1rem;
+    } 
 }
